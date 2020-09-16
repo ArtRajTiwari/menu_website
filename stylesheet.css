@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
 
 
@@ -28,6 +28,7 @@
 .main-nav-bar {
     height: 70vh;
     font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
     
 }
 
