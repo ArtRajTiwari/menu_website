@@ -35,7 +35,16 @@
 /*list of nav items*/
 .nav-alle-teppisch-kategorien li {
     list-style: none;
+    color: red;
+    
 }
+
+.nav-alle-teppisch-kategorien li:hover {
+    text-decoration: none;
+    color: #000;
+    
+}
+
 
 /* Farben */
 .Farbkreis {
@@ -144,9 +153,7 @@
 
 /* nav end */
 
-.nav-alle-teppisch-kategorien li {
-    list-style: none;
-}
+
 
 .nav-menu {
     height: 60px;
