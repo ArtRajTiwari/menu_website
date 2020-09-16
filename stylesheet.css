@@ -1,65 +1,127 @@
 /* ######################################### */
 /* Menü */
 /* ######################################### */
+/*NAV*/
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.main-nav-bar {
+    height: 70vh;
+}
+
+/*list of nav items*/
+.nav-alle-teppisch-kategorien li {
+    list-style: none;
+}
+
+/* Farben */
+.Farbkreis {
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /*    border-radius: 50%;*/
+    transition: all 0.3s ease;
+}
+
+.Farbkreis:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 1520px) {
+    .Farbkreis {
+        width: 25px;
+        height: 25px;
+        margin: 0px 0px;
+    }
+
+}
+
+
+
+.Farbpalette a {
+    margin: 0px 3%;
+}
 
 
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="col"] {
-   margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
 
 .navbar .dropdown-menu {
-  border:none;
-  
+    border: none;
+
 }
 
 /* breakpoint and up - mega dropdown styles */
 @media screen and (min-width: 992px) {
-  
-  /* remove the padding from the navbar so the dropdown hover state is not broken */
-.navbar {
-  padding-top:0px;
-  padding-bottom:0px;
-}
 
-/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-.navbar .nav-item {
-  padding:.5rem .5rem;
-  margin:0 .25rem;
-}
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+    .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 
-/* makes the dropdown full width  */
-.navbar .dropdown {position:static;}
+    /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+    .navbar .nav-item {
+        padding: .5rem .5rem;
+        margin: 0 .25rem;
+    }
 
-.navbar .dropdown-menu {
-  width:100%;
-  left:0;
-  right:0;
-/*  height of nav-item  */
-  top:45px;
-  
-  display:block;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s linear;
-  
-}
-  
- 
+    /* makes the dropdown full width  */
+    .navbar .dropdown {
+        position: static;
+    }
 
-  
-  /* shows the dropdown menu on hover */
-.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
-  display:block;
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s, opacity 0.3s linear;
-}
-  
-  .navbar .dropdown-menu {
-    border: 1px solid rgba(0,0,0,.15);
-    background-color: #fff;
-  }
+    .navbar .dropdown-menu {
+        width: 100%;
+        left: 0;
+        right: 0;
+        /*  height of nav-item  */
+        top: 45px;
+
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s linear;
+
+    }
+
+
+
+
+    /* shows the dropdown menu on hover */
+    .navbar .dropdown:hover .dropdown-menu,
+    .navbar .dropdown .dropdown-menu:hover {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s, opacity 0.3s linear;
+    }
+
+    .navbar .dropdown-menu {
+        border: 1px solid rgba(0, 0, 0, .15);
+        background-color: #fff;
+    }
 
 }
 
@@ -72,18 +134,12 @@
 }
 
 
-/*NAV*/
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{ color: #fff;  }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-}
-
+/* nav end */
 
 .nav-alle-teppisch-kategorien li {
     list-style: none;
 }
+
 .nav-menu {
     height: 60px;
     position: fixed;
@@ -110,7 +166,7 @@
         display: none;
     }
 
- 
+
 }
 
 a {
@@ -286,16 +342,7 @@ a {
 
 
 
-.innenAbstand-R-Nav {
-    padding-right: 20px;
-}
 
-@media only screen and (max-width: 1520px) {
-    .innenAbstand-R-Nav {
-        padding-right: 30px;
-    }
-
-}
 
 
 .RightNavContent {
@@ -407,51 +454,6 @@ a {
     margin: 0px 20px;
 }
 
-.Farbkreis {
-    width: 35px;
-    height: 35px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-/*    border-radius: 50%;*/
-    transition: all 0.3s ease;
-}
-
-.Farbkreis:hover {
-    transform: scale(1.1);
-    opacity: 0.7;
-}
-
-@media only screen and (max-width: 1520px) {
-    .Farbkreis {
-        width: 25px;
-        height: 25px;
-        margin: 0px 0px;
-    }
-
-}
-
-
-
-.Farbpalette a {
-    margin: 0px 3%;
-}
-
-.TeppichUnterlagen {
-    font-weight: 800;
-    left: 0px;
-    text-decoration-color: rgba(77, 79, 77, 0);
-    transition: text-decoration-color 0.3s ease;
-    width: 100px;
-}
-
-.TeppichUnterlagen:hover {
-    font-weight: 800;
-    left: 0px;
-    text-decoration: underline;
-    text-decoration-color: #4D4F4D;
-}
 
 .TeppichUnterlagenLink {
     display: block;
